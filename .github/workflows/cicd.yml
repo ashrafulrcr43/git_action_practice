@@ -1,4 +1,4 @@
-name:CICD pipeline making
+name: CICD pipeline making
 on:
   push:
     branches:
@@ -7,7 +7,10 @@ jobs:
   job1:
     runs-on:ubuntu-latest
     steps:
+      - name: Checkout the code
+      uses: actions/checkout@v2
+
       - name:Read the file
         run: cat README.md
-      uses: actions/checkout@v2
+
       
