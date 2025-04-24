@@ -13,5 +13,7 @@ jobs:
 
       - name: Read the file
         run: cat README.md
+      - name: Read Hello file
+        run: cat Hello.txt
 
       
