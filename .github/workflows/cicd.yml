@@ -1,0 +1,13 @@
+name:CICD pipeline making
+on:
+  push:
+    branches:
+      - main
+jobs:
+  job1:
+    runs-on:ubuntu-latest
+    steps:
+      - name:Read the file
+        run: cat README.md
+      uses: actions/checkout@v2
+      
